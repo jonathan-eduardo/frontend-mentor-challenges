@@ -1,0 +1,92 @@
+.card {
+  padding: 8px;
+  background: #ffffff;
+  box-shadow: 0 2px 12px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+.cardContent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.imageWrapper {
+  display: flex;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.cardTitle {
+  font-size: 16px;
+  line-height: 1rem;
+  color: #495057;
+  font-weight: 700;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.cardActions {
+  display: flex;
+  align-items: end;
+  gap: 8px;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+}
+
+.tag {
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 10px;
+  border-radius: 16px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 6px 10px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.html {
+  background: #f06529;
+}
+
+.css {
+  background: #264de4;
+}
+
+.js {
+  background: #f0db4f;
+  color: #323330;
+}
+
+.challengeLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.frontEndMaster {
+  border: 1px solid #3f54a3;
+}
+
+.github {
+  background: #343a40;
+}
+
+.selectChallenge {
+  background: #3f54a3;
+}
