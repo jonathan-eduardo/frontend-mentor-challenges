@@ -15,3 +15,9 @@ npm install
 ```
 npm run dev
 ```
+
+## Challenges
+
+| Challenge Link                                                                    | Repo                                                                                          |
+| --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| [Recipe Page](https://frontend-mentor-challenges-jonathan.vercel.app/recipe-page) | [Repository](https://github.com/jonathan-eduardo/frontend-mentor-challenges/tree/recipe-page) |
