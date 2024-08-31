@@ -1,3 +1,15 @@
 {
-  "challenges": []
+  "challenges": [
+    {
+      "id": "KiTsR8QQKm",
+      "title": "Recipe Page",
+      "slug": "recipe-page",
+      "thumbnail": {
+        "src": "./thumbnails/recipe-page.jpg",
+        "alt": "Screenshot of a recipe page"
+      },
+      "github_link": "https://github.com/jonathan-eduardo/frontend-mentor-challenges/tree/recipe-page",
+      "tags": ["html", "css"]
+    }
+  ]
 }
