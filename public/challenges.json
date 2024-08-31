@@ -10,6 +10,17 @@
       },
       "github_link": "https://github.com/jonathan-eduardo/frontend-mentor-challenges/tree/recipe-page",
       "tags": ["html", "css"]
+    },
+    {
+      "id": "UG32l9m6dQ",
+      "title": "Social Links Profile",
+      "slug": "social-links-profile",
+      "thumbnail": {
+        "src": "./thumbnails/social-links-profile.jpg",
+        "alt": "Profile card of a person featuring a photo, name, location, bio, and social media links."
+      },
+      "github_link": "https://github.com/jonathan-eduardo/frontend-mentor-challenges/tree/social-links-profile",
+      "tags": ["html", "css"]
     }
   ]
 }
