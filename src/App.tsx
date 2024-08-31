@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import Card from './components/card/card'
 import { Outlet } from 'react-router-dom'
+import Head from './helpers/head'
 
 type Challenge = {
   id: string
@@ -29,13 +30,17 @@ function App() {
 
   return (
     <>
+      <Head
+        title="Frontend Mentor | Challenges"
+        description="All my solutions to the challenges in Frontend Mentor"
+      />
       <section className="container">
         <h1 className="title">Frontend Mentor Challenges</h1>
         <p className="description">
           All my solutions to the challenges in Frontend Mentor, you can check
           the code at{' '}
           <a
-            href="https://github.com/jonathan-eduardo/frontend-mentor/"
+            href="https://github.com/jonathan-eduardo/frontend-mentor-challenges/"
             target="_blank"
             className="link"
           >
