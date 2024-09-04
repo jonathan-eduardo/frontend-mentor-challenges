@@ -21,6 +21,17 @@
       },
       "github_link": "https://github.com/jonathan-eduardo/frontend-mentor-challenges/tree/social-links-profile",
       "tags": ["html", "css"]
+    },
+    {
+      "id": "wyfFdeBwBz",
+      "title": "FAQ accordion",
+      "slug": "faq-accordion",
+      "thumbnail": {
+        "src": "./thumbnails/faq-accordion.jpg",
+        "alt": "FAQ section of a website with a purple background and a white card displaying frequently asked questions about Frontend Mentor."
+      },
+      "github_link": "https://github.com/jonathan-eduardo/frontend-mentor-challenges/tree/faq-accordion",
+      "tags": ["html", "css", "js"]
     }
   ]
 }
