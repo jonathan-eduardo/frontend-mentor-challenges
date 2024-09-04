@@ -6,6 +6,7 @@ import Head from '../../helpers/head'
 import Attribution from '../../components/attribution/attribution'
 import Question from './components/question'
 import StarIcon from './assets/images/icon-star.svg'
+import BgDesktopImage from './assets/images/background-pattern-desktop.svg?url'
 
 const BodyContainer = styled.main`
   font-family: ${({ theme }) => theme.fontFamily.primary};
@@ -18,22 +19,16 @@ const BodyContainer = styled.main`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+`
 
-  &::before {
-    content: '';
-    width: 100%;
-    height: 320px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    position: fixed;
-    background-image: url('./assets/images/background-pattern-desktop.svg');
-  }
+const BackgroundImage = styled.div`
+  width: 100%;
+  height: 320px;
+  position: fixed;
+  background-image: url(${BgDesktopImage});
 
   @media (max-width: 375px) {
-    &::before {
-      height: 232px;
-    }
+    height: 232px;
   }
 `
 
@@ -110,6 +105,7 @@ export default function FaqAccordion() {
         ]}
       />
       <BodyContainer>
+        <BackgroundImage />
         <FAQCard>
           <CardTitle>
             <StarIcon />
