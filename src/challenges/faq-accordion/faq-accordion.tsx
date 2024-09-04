@@ -6,7 +6,6 @@ import Head from '../../helpers/head'
 import Attribution from '../../components/attribution/attribution'
 import Question from './components/question'
 import StarIcon from './assets/images/icon-star.svg'
-import bgDesktop from './assets/images/background-pattern-desktop.svg?url'
 
 const BodyContainer = styled.main`
   font-family: ${({ theme }) => theme.fontFamily.primary};
