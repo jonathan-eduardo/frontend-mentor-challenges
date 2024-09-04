@@ -1,0 +1,15 @@
+.container::after {
+  content: '';
+  position: fixed;
+  background-image: url('./assets/images/background-pattern-desktop.svg');
+  height: 320px;
+  width: 100%;
+  background-size: cover;
+  background-position: top center;
+}
+
+@media (max-width: 375px) {
+  .container::after {
+    height: 232px;
+  }
+}

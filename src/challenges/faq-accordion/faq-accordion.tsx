@@ -6,7 +6,7 @@ import Head from '../../helpers/head'
 import Attribution from '../../components/attribution/attribution'
 import Question from './components/question'
 import StarIcon from './assets/images/icon-star.svg'
-import BgDesktopImage from './assets/images/background-pattern-desktop.svg?url'
+import styles from './faq-accordion.module.css'
 
 const BodyContainer = styled.main`
   font-family: ${({ theme }) => theme.fontFamily.primary};
@@ -19,17 +19,6 @@ const BodyContainer = styled.main`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-`
-
-const BackgroundImage = styled.div`
-  width: 100%;
-  height: 320px;
-  position: fixed;
-  background-image: url(${BgDesktopImage});
-
-  @media (max-width: 375px) {
-    height: 232px;
-  }
 `
 
 const Footer = styled.footer`
@@ -104,8 +93,7 @@ export default function FaqAccordion() {
           'https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap',
         ]}
       />
-      <BodyContainer>
-        <BackgroundImage />
+      <BodyContainer className={styles.container}>
         <FAQCard>
           <CardTitle>
             <StarIcon />
