@@ -24,11 +24,11 @@ const BodyContainer = styled.main`
     content: '';
     width: 100%;
     height: 320px;
-    background-image: url(${bgDesktop});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
     position: fixed;
+    background-image: url('./assets/images/background-pattern-desktop.svg');
   }
 
   @media (max-width: 375px) {
