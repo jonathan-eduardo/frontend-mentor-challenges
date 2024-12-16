@@ -32,6 +32,17 @@
       },
       "github_link": "https://github.com/jonathan-eduardo/frontend-mentor-challenges/tree/faq-accordion",
       "tags": ["html", "css", "js"]
+    },
+    {
+      "id": "CE_K6s0maV",
+      "title": "Results summary component",
+      "slug": "results-summary-component",
+      "thumbnail": {
+        "src": "./thumbnails/results-summary-component.jpg",
+        "alt": "Results summary card, categorized by reaction, memory, verbal, and visual scores, with a 'Continue' button."
+      },
+      "github_link": "https://github.com/jonathan-eduardo/frontend-mentor-challenges/tree/results-summary-component",
+      "tags": ["html", "css"]
     }
   ]
 }

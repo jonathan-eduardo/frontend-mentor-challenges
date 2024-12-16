@@ -27,31 +27,33 @@ export default function Card({
         <img className={styles.image} src={thumbnail.src} alt={thumbnail.alt} />
       </div>
       <div className={styles.cardContent}>
-        <div className={styles.cardInfo}>
-          <h3 className={styles.cardTitle}>{title}</h3>
-          <div className={styles.tags}>
-            {tags &&
-              tags.map((tag) => (
-                <span key={tag} className={`${styles.tag} ${styles[tag]}`}>
-                  {tag}
-                </span>
-              ))}
+        <h3 className={styles.cardTitle}>{title}</h3>
+        <div className={styles.cardActionBox}>
+          <div className={styles.cardInfo}>
+            <div className={styles.tags}>
+              {tags &&
+                tags.map((tag) => (
+                  <span key={tag} className={`${styles.tag} ${styles[tag]}`}>
+                    {tag}
+                  </span>
+                ))}
+            </div>
           </div>
-        </div>
-        <div className={styles.cardActions}>
-          <a
-            target="_blank"
-            href={github_link}
-            className={`${styles.challengeLink} ${styles.github}`}
-          >
-            <GithubIcon />
-          </a>
-          <Link
-            className={`${styles.challengeLink} ${styles.selectChallenge}`}
-            to={slug}
-          >
-            <ArrowRightIcon />
-          </Link>
+          <div className={styles.cardActions}>
+            <a
+              target="_blank"
+              href={github_link}
+              className={`${styles.challengeLink} ${styles.github}`}
+            >
+              <GithubIcon />
+            </a>
+            <Link
+              className={`${styles.challengeLink} ${styles.selectChallenge}`}
+              to={slug}
+            >
+              <ArrowRightIcon />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

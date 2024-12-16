@@ -3,12 +3,18 @@
   background: #ffffff;
   box-shadow: 0 2px 12px 4px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
 }
 
 .cardContent {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 8px;
+  gap: 24px;
 }
 
 .imageWrapper {
@@ -26,6 +32,12 @@
   line-height: 1rem;
   color: #495057;
   font-weight: 700;
+}
+
+.cardActionBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .cardInfo {
