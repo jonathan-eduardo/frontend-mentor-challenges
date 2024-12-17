@@ -1,0 +1,146 @@
+.container {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --very-dark-cyan: hsl(156, 42%, 18%);
+  --cream: hsl(32, 37%, 92%);
+  --ver-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+
+  --body-font-family: 'Montserrat', sans-serif;
+  --heading-font-family: 'Fraunces', serif;
+
+  background: var(--cream);
+  color: var(--dark-grayish-blue);
+  font-weight: 500;
+  min-height: calc(100vh - 48px);
+  font-family: var(--body-font-family);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productPreviewCardComponent {
+  border-radius: 8px;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 28px 16px;
+  box-shadow: 0px 2px 6px -4px rgba(0, 0, 0, 0.15);
+}
+
+.cardImageBox {
+  border-radius: 8px 0 0 8px;
+  background-image: url('./assets/images/image-product-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cardContent {
+  border-radius: 0 8px 8px 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+}
+
+.productType {
+  font-size: 12px;
+  line-height: 0.75rem;
+  letter-spacing: 0.42rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.productTitle,
+.discountPrice {
+  font-family: var(--heading-font-family);
+  font-size: 32px;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.productTitle {
+  color: var(--ver-dark-blue);
+  margin-bottom: 24px;
+}
+
+.productDescription {
+  font-size: 14px;
+  line-height: 1.5rem;
+  margin-bottom: 24px;
+}
+
+.productPrice {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.discountPrice {
+  color: var(--dark-cyan);
+}
+
+.originalPrice {
+  font-size: 13px;
+  line-height: 1rem;
+  text-decoration: line-through;
+}
+
+.addToCardButton {
+  background: var(--dark-cyan);
+  border: none;
+  border-radius: 8px;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5rem;
+  padding: 12px;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.addToCardButton:hover {
+  background: var(--very-dark-cyan);
+}
+
+@media (max-width: 572px) {
+  .container {
+    align-items: flex-start;
+  }
+
+  .productPreviewCardComponent {
+    grid-template-columns: 1fr;
+    grid-template-rows: 240px 1fr;
+  }
+
+  .cardImageBox {
+    background-image: url('./assets/images/image-product-mobile.jpg');
+    border-radius: 8px 8px 0 0;
+  }
+
+  .cardContent {
+    border-radius: 0 0 8px 8px;
+    padding: 24px;
+  }
+
+  .productType {
+    margin-bottom: 10px;
+  }
+
+  .productTitle {
+    margin-bottom: 18px;
+  }
+
+  .productPrice {
+    margin-bottom: 20px;
+  }
+}

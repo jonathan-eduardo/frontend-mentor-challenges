@@ -43,6 +43,17 @@
       },
       "github_link": "https://github.com/jonathan-eduardo/frontend-mentor-challenges/tree/results-summary-component",
       "tags": ["html", "css"]
+    },
+    {
+      "id": "GO7UmttRfa",
+      "title": "Product preview card component",
+      "slug": "product-preview-card-component",
+      "thumbnail": {
+        "src": "./thumbnails/product-preview-card-component.jpg",
+        "alt": "A product card displaying a perfume bottle on the left, with product details, pricing, and an 'Add to Cart' button on the right."
+      },
+      "github_link": "https://github.com/jonathan-eduardo/frontend-mentor-challenges/tree/product-preview-card-component",
+      "tags": ["html", "css"]
     }
   ]
 }
