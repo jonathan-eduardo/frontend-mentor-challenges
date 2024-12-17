@@ -40,8 +40,14 @@ function ResultsSummaryComponent() {
             <button className={styles.continueBtn}>Continue</button>
           </div>
         </main>
-        <Footer challengeLink="https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV" />
       </section>
+      <Footer
+        challengeLink="https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV"
+        customStyles={{
+          fontFamily: "'Hanken Grotesk', sans-serif",
+          background: '#ffffff',
+        }}
+      />
     </>
   )
 }
