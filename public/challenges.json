@@ -54,6 +54,17 @@
       },
       "github_link": "https://github.com/jonathan-eduardo/frontend-mentor-challenges/tree/product-preview-card-component",
       "tags": ["html", "css"]
+    },
+    {
+      "id": "koxpeBUmI",
+      "title": "Interactive Rating Component",
+      "slug": "interactive-rating-component",
+      "thumbnail": {
+        "src": "./thumbnails/interactive-rating-component.jpg",
+        "alt": "A dark-themed feedback card with selectable rating buttons from 1 to 5 and a bright orange 'Submit' button."
+      },
+      "github_link": "https://github.com/jonathan-eduardo/frontend-mentor-challenges/tree/interactive-rating-component",
+      "tags": ["html", "css", "js"]
     }
   ]
 }

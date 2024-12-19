@@ -1,0 +1,39 @@
+.container {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --dark-blue: hsl(213, 20%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+
+  --default-font: 'Overpass', sans-serif;
+
+  padding: 0;
+  margin: 0;
+
+  background: var(--very-dark-blue);
+  color: var(--light-grey);
+  font-family: var(--default-font);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ratingComponent {
+  max-width: 416px;
+  border-radius: 32px;
+  background: radial-gradient(
+    150% 150% at 50% 0%,
+    var(--dark-blue) 0%,
+    var(--very-dark-blue) 100%
+  );
+  padding: 32px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.01);
+  margin: 0 24px;
+}
+
+@media (max-width: 375px) {
+  .ratingComponent {
+    padding: 24px;
+  }
+}
