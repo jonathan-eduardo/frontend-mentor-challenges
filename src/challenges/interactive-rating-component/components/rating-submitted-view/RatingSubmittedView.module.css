@@ -1,0 +1,61 @@
+.ratingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 12px 8px;
+}
+
+.illustrationIcon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.rateSubmitted {
+  font-size: 16px;
+  line-height: 1rem;
+  padding: 8px 14px;
+  background: var(--dark-blue);
+  color: var(--orange);
+  border-radius: 32px;
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.rateSubmittedTitle {
+  font-size: 28px;
+  line-height: 1.75rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.rateSubmittedMessage {
+  font-size: 15px;
+  line-height: 1.5rem;
+  color: var(--light-grey);
+}
+
+@media (max-width: 375px) {
+  .illustrationIcon {
+    margin-bottom: 24px;
+  }
+
+  .rateSubmitted {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 32px;
+  }
+
+  .rateSubmittedTitle {
+    font-size: 24px;
+    line-height: 1.5rem;
+    margin-bottom: 16px;
+  }
+
+  .rateSubmittedMessage {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

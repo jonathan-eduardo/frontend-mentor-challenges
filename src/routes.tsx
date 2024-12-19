@@ -21,6 +21,13 @@ const SocialLinksProfile = lazy(
   () => import('./challenges/social-links-profile/social-links-profile.tsx')
 )
 
+const InteractiveRatingComponent = lazy(
+  () =>
+    import(
+      './challenges/interactive-rating-component/InteractiveRatingComponent.tsx'
+    )
+)
+
 const routes = [
   {
     path: '/',
@@ -45,6 +52,10 @@ const routes = [
   {
     path: '/product-preview-card-component',
     element: <ProductPreviewCardComponent />,
+  },
+  {
+    path: '/interactive-rating-component',
+    element: <InteractiveRatingComponent />,
   },
 ]
 
