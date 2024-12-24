@@ -65,6 +65,17 @@
       },
       "github_link": "https://github.com/jonathan-eduardo/frontend-mentor-challenges/tree/interactive-rating-component",
       "tags": ["html", "css", "js"]
+    },
+    {
+      "id": "SbdUL_w0U",
+      "title": "NFT Preview Card Component",
+      "slug": "nft-preview-card-component",
+      "thumbnail": {
+        "src": "./thumbnails/nft-preview-card-component.jpg",
+        "alt": "A dark-themed NFT card displaying a 3D cube, with details about its collection, price in ETH, remaining time, and creator information."
+      },
+      "github_link": "https://github.com/jonathan-eduardo/frontend-mentor-challenges/tree/nft-preview-card-component",
+      "tags": ["html", "css"]
     }
   ]
 }

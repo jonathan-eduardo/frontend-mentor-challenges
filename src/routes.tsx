@@ -27,6 +27,12 @@ const InteractiveRatingComponent = lazy(
       './challenges/interactive-rating-component/InteractiveRatingComponent.tsx'
     )
 )
+const NftPreviewCardComponent = lazy(
+  () =>
+    import(
+      './challenges/nft-preview-card-component/NftPreviewCardComponent.tsx'
+    )
+)
 
 const routes = [
   {
@@ -56,6 +62,10 @@ const routes = [
   {
     path: '/interactive-rating-component',
     element: <InteractiveRatingComponent />,
+  },
+  {
+    path: '/nft-preview-card-component',
+    element: <NftPreviewCardComponent />,
   },
 ]
 
