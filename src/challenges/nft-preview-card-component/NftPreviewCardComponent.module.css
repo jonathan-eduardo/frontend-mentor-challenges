@@ -1,0 +1,191 @@
+.container {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  --primary-dark-blue: hsl(217, 54%, 11%);
+  --secondary-dark-blue: hsl(216, 50%, 16%);
+  --tertiary-dark-blue: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  --default-font: 'Outfit', sans-serif;
+
+  font-family: var(--default-font);
+  background: var(--primary-dark-blue);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.nftPreviewCardComponent {
+  box-shadow: 0 16px 16px 16px rgba(0, 0, 0, 0.065),
+    0 32px 32px 32px rgba(0, 0, 0, 0.05);
+  background: var(--secondary-dark-blue);
+  padding: 24px;
+  margin: 24px;
+  max-width: 350px;
+  border-radius: 16px;
+  color: var(--soft-blue);
+  display: flex;
+  flex-direction: column;
+}
+
+.imageWrapper {
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  flex-basis: 302px;
+  background: url('./assets/images/image-equilibrium.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.imageWrapper::before {
+  content: '';
+  opacity: 0;
+  height: 48px;
+  width: 48px;
+  background: url('./assets/images/icon-view.svg') no-repeat;
+  background-position: center;
+  transition: all 0.3s;
+}
+
+.imageWrapper::after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--cyan);
+  filter: opacity(0.5);
+  transition: all 0.3s;
+}
+
+.imageWrapper:hover::before,
+.imageWrapper:hover::after {
+  opacity: 1;
+}
+
+.cardTitle {
+  margin-top: 26px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cardTitle:hover {
+  transition: all 0.3s;
+}
+
+.cardTitle:hover {
+  color: var(--cyan);
+}
+
+.cardDescription {
+  font-size: 18px;
+  line-height: 1.625rem;
+  margin-top: 18px;
+}
+
+.cardInfo {
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoBox {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.infoIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoText {
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+.ethereum {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--cyan);
+}
+
+.lineSeparator {
+  height: 1px;
+  width: 100%;
+  background: var(--tertiary-dark-blue);
+  margin: 22px 0 16px;
+}
+
+.cardCreator {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.avatarWrapper {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatarImage {
+  width: 100%;
+  height: auto;
+}
+
+.creatorInfo {
+  margin-left: 16px;
+  line-height: 1.5rem;
+}
+
+.creatorName {
+  text-decoration: none;
+  color: var(--white);
+  transition: color 0.3s;
+}
+
+.creatorName:hover {
+  color: var(--cyan);
+}
+
+@media (max-width: 375px) {
+  .imageWrapper {
+    flex-basis: 278px;
+  }
+
+  .cardDescription {
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 1.625rem;
+  }
+
+  .cardInfo {
+    margin-top: 12px;
+  }
+
+  .lineSeparator {
+    margin-top: 14px;
+  }
+
+  .cardCreator {
+    margin-bottom: 0;
+  }
+}
