@@ -34,6 +34,10 @@ const NftPreviewCardComponent = lazy(
     )
 )
 
+const OrderSummaryComponent = lazy(
+  () => import('./challenges/order-summary-component/OrderSummaryComponent.tsx')
+)
+
 const routes = [
   {
     path: '/',
@@ -66,6 +70,10 @@ const routes = [
   {
     path: '/nft-preview-card-component',
     element: <NftPreviewCardComponent />,
+  },
+  {
+    path: '/order-summary-component',
+    element: <OrderSummaryComponent />,
   },
 ]
 

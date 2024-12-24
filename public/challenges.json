@@ -76,6 +76,17 @@
       },
       "github_link": "https://github.com/jonathan-eduardo/frontend-mentor-challenges/tree/nft-preview-card-component",
       "tags": ["html", "css"]
+    },
+    {
+      "id": "QlPmajDUj",
+      "title": "Order summary component",
+      "slug": "order-summary-component",
+      "thumbnail": {
+        "src": "./thumbnails/order-summary-component.jpg",
+        "alt": "A order summary card, detailing an annual plan, with options to change the plan, proceed to payment, or cancel the order."
+      },
+      "github_link": "https://github.com/jonathan-eduardo/frontend-mentor-challenges/tree/order-summary-component",
+      "tags": ["html", "css"]
     }
   ]
 }
